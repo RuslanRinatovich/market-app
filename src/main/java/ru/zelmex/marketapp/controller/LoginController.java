@@ -50,7 +50,7 @@ public class LoginController {
             ShowErrorMessageBox("Не верный логин, пароль или текст капчи");
             return;
         }
-            showMainWindow(person.get());
+        showMainWindow(person.get());
     }
 
     public void showMainWindow(User person) {

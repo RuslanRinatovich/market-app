@@ -1,71 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ButtonBar?>
-<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.FlowPane?>
-<?import javafx.scene.layout.VBox?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-            prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22"
-            xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="ru.zelmex.marketapp.controller.MainController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="298.0" prefWidth="437.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.zelmex.marketapp.controller.MainController">
    <children>
-      <BorderPane layoutX="-7.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="0.0">
-         <bottom>
-            <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-              <buttons>
-                <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#btnAddOnAction" text="Добавить" />
-                  <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#btnDeleteOnAction" text="Удалить" />
-                  <Button fx:id="btnEdit" mnemonicParsing="false" onAction="#btnEditOnAction" text="Изменить" />
-              </buttons>
-            </ButtonBar>
-         </bottom>
-         <center>
-            <TableView fx:id="tableViewProducts" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-              <columns>
-                  <TableColumn fx:id="tableColumnPhoto" editable="false" minWidth="100.0" prefWidth="-1.0" text="Изображение" />
-                <TableColumn fx:id="tableColumnArtikul" editable="false" maxWidth="-Infinity" minWidth="75.0" prefWidth="75.0" text="Артикул" />
-                <TableColumn fx:id="tableColumnTitle" editable="false" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" text="Название" />
-                  <TableColumn fx:id="tableColumnCatefory" editable="false" maxWidth="-Infinity" minWidth="100.0" prefWidth="100.0" text="Категория" />
-                  <TableColumn fx:id="tableColumnManufacturer" editable="false" maxWidth="-Infinity" minWidth="100.0" prefWidth="100.0" text="Производитель" />
-                  <TableColumn fx:id="tableColumnSupplier" editable="false" maxWidth="-Infinity" minWidth="100.0" prefWidth="100.0" text="Поставщик" />
-                  <TableColumn fx:id="tableColumnCost" editable="false" maxWidth="1.7976931348623157E308" minWidth="100.0" prefWidth="-1.0" text="Стоимость" />
-              </columns>
-            </TableView>
-         </center>
-         <top>
-            <VBox prefWidth="100.0" BorderPane.alignment="CENTER">
-               <children>
-                  <ToolBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0">
-                    <items>
-                        <Label fx:id="labelUser" maxHeight="1.7976931348623157E308" prefWidth="200.0" text="Label" />
-                        <Button fx:id="btnUnitType" mnemonicParsing="false" onAction="#btnUnitTypeOnAction" text="Единицы измерения" />
-                        <Button fx:id="btnSupplier" mnemonicParsing="false" onAction="#btnSupplierOnAction" text="Поставщики" />
-                        <Button fx:id="btnManufacturer" mnemonicParsing="false" onAction="#btnManufacturerOnAction" text="Производители" />
-                      <Button fx:id="btnCategory" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#btnCategoryOnAction" text="Категории" />
-                    </items>
-                  </ToolBar>
-                  <FlowPane>
-                     <children>
-                        <TextField fx:id="textFieldSearch" onAction="#textFieldSearchOnAction" prefWidth="200.0" promptText="Введите название для поиска" />
-                        <ComboBox fx:id="comboBoxCategory" onAction="#comboBoxCategoryOnAction" prefWidth="150.0" promptText="тип продукции" />
-                        <ComboBox fx:id="comboBoxManufacturer" onAction="#comboBoxManufacturerOnAction" prefWidth="150.0" promptText="производитель" />
-                        <ComboBox fx:id="comboBoxSupplier" onAction="#comboBoxSupplierOnAction" prefWidth="150.0" promptText="поставщик" />
-                        <ComboBox fx:id="comboBoxSort" onAction="#comboBoxSortOnAction" prefWidth="150.0" promptText="сортировать по" />
-                     </children>
-                  </FlowPane>
-               </children>
-            </VBox>
-         </top>
-      </BorderPane>
+      <Label fx:id="labelUser" layoutX="32.0" layoutY="27.0" text="Label" />
    </children>
 </AnchorPane>
