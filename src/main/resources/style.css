@@ -1,0 +1,66 @@
+.root {
+     -fx-main-bg-color: #FFF;
+     -fx-additional-bg-color: #17E9E0;
+     -fx-accent-bg-color: #FCCD04;
+     -fx-headers-color: #A64AC9;
+     -fx-fields-color:  #F5E6CC;
+ }
+
+.grid-pane {
+     -fx-background-color: -fx-main-bg-color;
+}
+
+.label
+{
+  -fx-font-weight: bold;
+  -fx-font-size: 14px;
+  -fx-background-color: transparent;
+}
+
+.header-label
+{
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-headers-color;
+}
+
+.button {
+
+  -fx-border-style: solid; /* Green */
+  -fx-border-color: -fx-additional-bg-color;
+  -fx-background-color: -fx-additional-bg-color;
+  -fx-padding: 5 5;
+  -fx-text-fill: -fx-main-bg-color;
+  -fx-text-align: center;
+  -fx-display: inline-block;
+  -fx-font-size: 16px;
+  -fx-font-weight: bold;
+}
+
+.button:hover {
+  -fx-background-color: white;
+  -fx-border-color: none;
+  -fx-text-fill: #000000;
+}
+
+.text-field
+{
+    -fx-font-size: 10pt;
+    -fx-background-color: -fx-fields-color;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-border-style: solid; /* Green */
+    -fx-border-width: 1px; /* Green */
+    -fx-border-color: -fx-accent-bg-color;
+}
+
+
+
+
+
+
+
+
+
+
